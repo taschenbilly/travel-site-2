@@ -1,0 +1,12 @@
+.large-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.large-hero__text-content {
+  position: absolute;
+  text-align: center;
+}
