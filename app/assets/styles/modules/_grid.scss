@@ -15,4 +15,20 @@
     @include mixins.respond(md) {
         grid-template-columns: 1fr 2fr;
     }
+
+    &--2-col {
+        position: relative;
+
+        @include mixins.respond(md) {
+            grid-template-columns: repeat(2, 1fr)
+        }
+    }
+
+    &__item {
+
+        &--feature {
+            position: absolute;
+            left: 0;
+        }
+    }
 }
