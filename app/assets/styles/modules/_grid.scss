@@ -1,0 +1,18 @@
+@use '../base/mixins';
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: start center;
+    gap: 65px;
+
+ 
+
+    @include mixins.respond(sm) {
+        grid-template-columns: 2fr 2fr;
+    }
+
+    @include mixins.respond(md) {
+        grid-template-columns: 1fr 2fr;
+    }
+}

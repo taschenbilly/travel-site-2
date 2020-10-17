@@ -1,0 +1,26 @@
+@use '../base/mixins';
+
+.wrapper {
+    padding: 0 18px;
+    max-width: 1236px;
+    margin: auto;
+
+    &--medium {
+        max-width: 976px;
+    }
+
+    &--b-margin {
+        margin-bottom: 1rem;
+
+
+        @include mixins.respond(sm) {
+            margin-bottom: 2rem;
+        }
+
+
+    }
+
+    .wrapper {      // wrappen in wrapper shouldn't have 2x padding
+        padding: 0;
+    }
+}

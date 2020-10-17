@@ -1,0 +1,49 @@
+@use '../base/mixins';
+
+.headline {
+    font-size: 1.9rem;
+    font-weight: 300;
+    color: var(--clr-blue);
+
+    @include mixins.respond(sm) {
+        font-size: 2.875rem;
+    }
+
+    &--centered {
+        text-align: center;
+    }
+
+    &--orange {
+        color: var(--clr-orange);
+    }
+
+    &--small {
+        font-size: 1.2rem;
+
+        @include mixins.respond(sm) {
+            font-size: 1.875rem;
+        }
+    
+    }
+
+    &--narrow {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    &--light {
+        font-weight: 100;
+    }
+
+    &--b-margin-small {
+        margin-bottom: .5em;    // em roots with the font
+    }
+
+    &--b-margin-large {
+        margin-bottom: 1.6em;
+    }
+
+    &--no-t-margin {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,14 @@
+@use '../base/mixins';
+
+.page-section {
+    padding: 1.2rem 0;
+
+    @include mixins.respond(md) {
+        padding: 4.5rem 0;
+    }
+
+    &--blue {
+        background: var(--clr-blue);
+        color: #FFF;
+    }
+}
