@@ -371,6 +371,36 @@ template {
   padding: 1.1rem 1.9rem;
 }
 
+.features {
+  position: relative;
+}
+@media (min-width: 530px) {
+  .features {
+    padding-left: 94px;
+  }
+}
+.features__icon {
+  display: block;
+  margin: auto;
+}
+@media (min-width: 530px) {
+  .features__icon {
+    position: absolute;
+    left: 0;
+  }
+}
+.features__title {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: center;
+}
+@media (min-width: 530px) {
+  .features__title {
+    font-size: 1.875rem;
+    text-align: left;
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -386,6 +416,18 @@ template {
   .grid {
     grid-template-columns: 1fr 2fr;
   }
+}
+.grid--2-col {
+  position: relative;
+}
+@media (min-width: 800px) {
+  .grid--2-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.grid__item--feature {
+  position: absolute;
+  left: 0;
 }
 
 .large-hero {
@@ -488,6 +530,32 @@ template {
 .page-section--blue {
   background: var(--clr-blue);
   color: #FFF;
+}
+
+.section-title {
+  font-size: 2.55rem;
+  font-weight: 300;
+  text-align: center;
+}
+@media (min-width: 530px) {
+  .section-title {
+    font-size: 3.75rem;
+  }
+}
+.section-title strong {
+  font-weight: 500;
+}
+.section-title__icon {
+  padding-right: 0.5rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 0.6rem;
+}
+@media (min-width: 530px) {
+  .section-title__icon {
+    display: inline-block;
+    margin-bottom: 0;
+  }
 }
 
 p {

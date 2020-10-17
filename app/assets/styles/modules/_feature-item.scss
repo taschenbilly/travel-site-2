@@ -1,0 +1,35 @@
+@use '../base/mixins';
+
+.features {
+
+    position: relative;
+
+
+    @include mixins.respond(sm) {
+        padding-left: 94px;
+      }
+
+    
+    &__icon {
+        display: block;
+        margin: auto;
+
+        @include mixins.respond(sm) {
+            position: absolute;
+            left: 0;
+          }
+    
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-align: center;
+
+        @include mixins.respond(sm) {
+            font-size: 1.875rem;
+            text-align: left;
+
+          }
+    }
+}
