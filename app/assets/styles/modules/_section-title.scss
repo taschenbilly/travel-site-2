@@ -14,6 +14,10 @@
         font-weight: 500;
     }
 
+    &--blue {
+        color: var(--clr-blue);
+    }
+
     &__icon {
         padding-right: .5rem;
 
@@ -22,6 +26,9 @@
         margin-bottom: .6rem;
 
         @include mixins.respond(sm) {
+            position: relative;
+            top: 8px;
+
             display: inline-block;
             margin-bottom: 0;
 

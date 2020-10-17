@@ -24,6 +24,11 @@
         }
     }
 
+    &--3-col {
+        @include mixins.respond(md) {
+            grid-template-columns: repeat(3, 1fr)
+        }
+    }
     &__item {
 
         &--feature {
