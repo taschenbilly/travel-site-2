@@ -3,10 +3,8 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    place-items: start center;
     gap: 65px;
 
- 
 
     @include mixins.respond(sm) {
         grid-template-columns: 2fr 2fr;
@@ -14,6 +12,8 @@
 
     @include mixins.respond(md) {
         grid-template-columns: 1fr 2fr;
+
+
     }
 
     &--2-col {
@@ -25,9 +25,14 @@
     }
 
     &--3-col {
+
+
+        padding-top: 80px;
+
         @include mixins.respond(md) {
-            grid-template-columns: repeat(3, 1fr)
+            grid-template-columns: repeat(3, 1fr);
         }
+        
     }
     &__item {
 

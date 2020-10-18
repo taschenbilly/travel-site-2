@@ -16,8 +16,15 @@
         @include mixins.respond(sm) {
             margin-bottom: 2rem;
         }
+    }
 
+    &--no-padding-md {
+        padding: 0;
 
+        @include mixins.respond(sm) {
+            padding: 0 18px;
+
+        }
     }
 
     .wrapper {      // wrappen in wrapper shouldn't have 2x padding

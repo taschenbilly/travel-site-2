@@ -404,7 +404,6 @@ template {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  place-items: start center;
   gap: 65px;
 }
 @media (min-width: 530px) {
@@ -424,6 +423,9 @@ template {
   .grid--2-col {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.grid--3-col {
+  padding-top: 80px;
 }
 @media (min-width: 800px) {
   .grid--3-col {
@@ -537,7 +539,12 @@ template {
   color: #fff;
 }
 .page-section--testimonials {
-  background: url("/app/assets/images/testimonials-bg.jpg") no-repeat center/cover;
+  background: #e0e6ef;
+}
+@media (min-width: 800px) {
+  .page-section--testimonials {
+    background: url("/app/assets/images/testimonials-bg.jpg") no-repeat center/cover;
+  }
 }
 
 .section-title {
@@ -573,15 +580,22 @@ template {
 
 .testimonials {
   background: rgba(255, 255, 255, 0.7);
-  padding: 0 1.8125rem 1px 1.8125rem;
+  grid-auto-rows: 1fr;
+  padding: 0 18px 1px 18px;
+  margin-bottom: 25px;
+}
+@media (min-width: 800px) {
+  .testimonials {
+    padding: 0 1.8125rem 1px 1.8125rem;
+  }
 }
 .testimonials__photo {
   border-radius: 80px;
   overflow: hidden;
   width: 160px;
   height: 160px;
-  margin-top: -80px;
   border: 6px solid rgba(255, 255, 255, 0.7);
+  margin: -80px auto 0 auto;
 }
 .testimonials__title {
   color: var(--clr-blue);
@@ -625,6 +639,14 @@ p a {
 @media (min-width: 530px) {
   .wrapper--b-margin {
     margin-bottom: 2rem;
+  }
+}
+.wrapper--no-padding-md {
+  padding: 0;
+}
+@media (min-width: 530px) {
+  .wrapper--no-padding-md {
+    padding: 0 18px;
   }
 }
 .wrapper .wrapper {
