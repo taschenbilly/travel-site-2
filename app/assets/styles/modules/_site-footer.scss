@@ -1,0 +1,20 @@
+@use '../base/mixins';
+
+.site-footer {
+    background: var(--clr-blue);
+    color: #FFF;
+    padding: .5rem 0;
+    text-align: center;
+
+    &__text {
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: 200;
+
+        @include mixins.respond(md) {
+            display: inline;
+            margin-right: 1.4rem;
+        }
+    }
+}
+
